@@ -1,0 +1,127 @@
+{
+  "_meta": {
+    "purpose": "食事応答性が比較的よく実証されたSNPに絞った精選リスト。遺伝子検査の解釈に使う。",
+    "principles": [
+      "遺伝は『体質・確率』であり診断ではない。生活・食事で変えられる（遺伝子×環境）。",
+      "疾患リスク変異（APOE ε4、HFE 等）は医師・遺伝カウンセリング案件。栄養は食事応答の観点のみ扱う。",
+      "消費者検査の生データは誤りを含みうる。重要な所見は臨床で確認する。",
+      "血液・問診と統合して初めて有効（遺伝で『どこを見るか』、血液で『何が起きているか』）。"
+    ],
+    "evidence_tags": ["確立", "中程度", "仮説", "疾患関連_要医師"]
+  },
+  "snps": [
+    {
+      "gene": "MTHFR", "rsid": "rs1801133", "alias": "C677T",
+      "affects": "葉酸代謝・ホモシステイン・メチル化",
+      "effect": "T型で酵素活性が低下（TTで約7割減、CTで約3割減）。葉酸の活性化が滞りやすい。",
+      "nutrition": "葉酸（緑葉野菜・レバー）、必要に応じ活性型葉酸/B12/B6。ホモシステインの確認。",
+      "related_patterns": ["B3(大球性・メチル化)", "MCV高値"],
+      "evidence": "確立(酵素活性)/疾患関連は過大評価されやすい",
+      "caution": "",
+      "source": "PMC5732517（rs1801133 TTは因果的に酵素活性低下）"
+    },
+    {
+      "gene": "MTHFR", "rsid": "rs1801131", "alias": "A1298C",
+      "affects": "葉酸代謝（C677Tより影響小）",
+      "effect": "単独の影響は小さいが、C677Tとの複合で活性低下に寄与しうる。",
+      "nutrition": "C677Tと合わせて葉酸・B群を評価。",
+      "related_patterns": ["B3(大球性・メチル化)"],
+      "evidence": "中程度", "caution": "", "source": "nutrigenetics reviews 2025"
+    },
+    {
+      "gene": "APOE", "rsid": "rs429358+rs7412", "alias": "ε2/ε3/ε4",
+      "affects": "脂質代謝（飽和脂肪への応答）",
+      "effect": "ε4保有で飽和脂肪摂取によるLDL上昇が大きい傾向。",
+      "nutrition": "ε4なら飽和脂肪を控えめ、不飽和脂肪（魚・オリーブ油）へ。",
+      "related_patterns": ["脂質(LDL/HDL)"],
+      "evidence": "確立寄り(脂質応答)",
+      "caution": "ε4はアルツハイマー・心血管疾患リスクにも関連する疾患関連情報。結果の告知・解釈は医師/遺伝カウンセリング。栄養では脂質応答の観点のみ、慎重に扱う。",
+      "source": "Precision Nutrition review 2025; 一般的知見"
+    },
+    {
+      "gene": "TCF7L2", "rsid": "rs7903146",
+      "affects": "インスリン分泌・2型糖尿病リスク",
+      "effect": "T型で2型糖尿病リスク上昇・インスリン分泌応答が低下しやすい。",
+      "nutrition": "低GI・食物繊維多め・血糖のゆるやかな上げ方。体重管理。",
+      "related_patterns": ["C2(痩せ型高血糖・糖化)", "F1/F2(リブレ)"],
+      "evidence": "確立(疾患関連)/機序はintronで未確定",
+      "caution": "糖尿病そのものの診断・管理は医師。",
+      "source": "PMC5732517; Genes&Nutrition 2025"
+    },
+    {
+      "gene": "FTO", "rsid": "rs9939609",
+      "affects": "食欲・体重・脂肪量",
+      "effect": "A型で食欲・肥満傾向がやや高いが、効果は小さく生活で大きく変わる。",
+      "nutrition": "高タンパク食・身体活動が有効とされる。満腹感の工夫。",
+      "related_patterns": ["C1/C2(体組成・血糖)"],
+      "evidence": "確立寄り(効果は小)", "caution": "",
+      "source": "Genes&Nutrition 2025; FTOはダイエット応答の予測に有力"
+    },
+    {
+      "gene": "CYP1A2", "rsid": "rs762551",
+      "affects": "カフェイン代謝",
+      "effect": "AA=速い代謝、C保有=遅い代謝。遅い人はコーヒー過多で心血管リスク上昇の報告。",
+      "nutrition": "遅い代謝ならカフェインを控えめ・午後は避ける。",
+      "related_patterns": ["E2(ストレス・自律神経)"],
+      "evidence": "中〜確立寄り", "caution": "",
+      "source": "nutrigenomics well-evidenced list"
+    },
+    {
+      "gene": "VDR/GC", "rsid": "rs2228570(FokI)/rs2282679(GC)",
+      "affects": "ビタミンD代謝・必要量",
+      "effect": "一部の型でビタミンDの充足に必要な量が多い傾向。",
+      "nutrition": "血中25-OHDを指標に、魚・日光・（必要なら医師相談で）サプリ。",
+      "related_patterns": ["D2(ビタミンD)"],
+      "evidence": "中程度", "caution": "腎疾患等があればD用量は医師相談。",
+      "source": "nutrigenetics reviews"
+    },
+    {
+      "gene": "LCT/MCM6", "rsid": "rs4988235", "alias": "-13910 C/T",
+      "affects": "乳糖分解（ラクターゼ持続性）",
+      "effect": "非持続型で乳糖不耐になりやすい。東アジアでは非持続型が多い。",
+      "nutrition": "乳糖不耐なら乳製品を発酵品・低乳糖・代替へ。カルシウム源を別途確保。",
+      "related_patterns": ["消化・不耐"],
+      "evidence": "確立", "caution": "",
+      "source": "一般的知見（lactase persistence）"
+    },
+    {
+      "gene": "ALDH2", "rsid": "rs671", "alias": "Glu504Lys",
+      "affects": "アルコール・アセトアルデヒド代謝（日本人で重要）",
+      "effect": "A(Lys)型でアセトアルデヒド分解が大きく低下（フラッシング）。飲酒で食道がん等のリスク上昇。",
+      "nutrition": "飲酒を控える/避ける。無理な飲酒を避ける。",
+      "related_patterns": ["肝(γ-GTP)", "飲酒(問診)"],
+      "evidence": "確立",
+      "caution": "飲酒に伴う発がんリスクは医療的な重要情報。過度飲酒は主治医に相談。",
+      "source": "一般的知見（東アジアALDH2）"
+    },
+    {
+      "gene": "HFE", "rsid": "rs1800562(C282Y)/rs1799945(H63D)",
+      "affects": "鉄の吸収・貯蔵（ヘモクロマトーシス）",
+      "effect": "特定の型で鉄が過剰に蓄積しやすい（遺伝性ヘモクロマトーシス）。",
+      "nutrition": "鉄の補充・高鉄サプリを避ける。フェリチンと併読。",
+      "related_patterns": ["B2(鉄過剰の注意)"],
+      "evidence": "疾患関連_要医師",
+      "caution": "ヘモクロマトーシスは医療管理。高フェリチン＋該当型は必ず医師へ。鉄は足さない。",
+      "source": "一般的知見（HFE）"
+    },
+    {
+      "gene": "BCO1", "rsid": "rs12934922/rs7501331",
+      "affects": "β-カロテン→ビタミンA変換",
+      "effect": "変換が低い型では、β-カロテンからのビタミンA供給が不足しやすい。",
+      "nutrition": "レバー・卵・乳などの既成型ビタミンA(レチノール)も適度に。",
+      "related_patterns": ["ビタミンA"],
+      "evidence": "中程度", "caution": "ビタミンA過剰も有害。過量サプリは避ける。",
+      "source": "nutrigenetics reviews"
+    },
+    {
+      "gene": "COMT", "rsid": "rs4680", "alias": "Val158Met",
+      "affects": "ドーパミン・カテコールアミン代謝、メチル化需要",
+      "effect": "型により神経伝達物質の分解速度が異なる。ストレス応答との関連が言われる。",
+      "nutrition": "マグネシウム・B群。メチル化サプリ（メチル基）への感受性に個人差の考え方あり。",
+      "related_patterns": ["E2(ストレス)", "B3(メチル化)"],
+      "evidence": "仮説",
+      "caution": "エビデンスは弱め。断定しない。",
+      "source": "consumer nutrigenetics（弱い根拠）"
+    }
+  ]
+}
